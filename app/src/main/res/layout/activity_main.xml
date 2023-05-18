@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="Uso de Base de Datos"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el código"
+        android:textSize="32sp"
+        android:id="@+id/codigo"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textSize="32sp"
+        android:id="@+id/descripcion"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:textSize="32sp"
+        android:id="@+id/precio"
+        android:inputType="numberDecimal"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/alta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="alta"
+                android:text="Alta"
+                android:textSize="32sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="concod"
+                android:text="Consulta por código"
+                android:textSize="28sp"
+                android:id="@+id/concod"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="condes"
+                android:text="Consulta por descripción"
+                android:textSize="28sp"
+                android:id="@+id/condes"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="baja"
+                android:text="Baja por código"
+                android:textSize="28sp"
+                android:id="@+id/baja"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="modificacion"
+                android:text="Modificación"
+                android:textSize="30sp"
+                android:id="@+id/modificacion"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="limpiar"
+                android:text="Limpiar registros"
+                android:textSize="30sp"
+                android:id="@+id/limpiar"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="salir"
+                android:text="Salir"
+                android:textSize="30sp"
+                android:id="@+id/salirr"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
